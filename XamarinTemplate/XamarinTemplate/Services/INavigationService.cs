@@ -15,5 +15,6 @@ namespace XamarinTemplate.Services
         Task NavigateForwardWithInstance<T>(T viewModel);
         void RegisterView(Type view, bool viewHasViewmodel = true);
         void Start(Type intialView, Action ViewRegistration);
+        void StartWithInstance(Page initialView, Action ViewRegistration);
     }
 }
